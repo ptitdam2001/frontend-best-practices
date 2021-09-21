@@ -2,7 +2,7 @@
 
 Inside this project, we will describe the best practices for frontend technologies like below:
 
-- [React](./React/index.md)
+- [React](./React/main.md)
 - [Typescript](./Typescript/main.md)
 
 
