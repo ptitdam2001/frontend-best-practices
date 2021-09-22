@@ -87,3 +87,49 @@ const handleChange = (ev: React.MouseEvent<HTMLDivElement>) => { ... }
 ```
 
 In code above `React.MouseEvent<HTMLDivElement>` is type of mouse event, and this event happened on `HTMLDivElement`
+
+
+
+# Typing Patterns
+
+
+
+## Function components - FC
+
+You should follow theses rules below:
+
+- The function name starts with a capital letter
+- Favor the destructuring of props to access it
+- inside the function component when you declare a user interaction function, you should prefix it with `handle`
+
+An example of Function component declaration:
+
+```tsx
+import * as React from 'react';
+
+type Props = {
+  label: string;
+  count: number;
+  onIncrement: () => void;
+};
+
+export const Counter: React.FC<Props> = props => {
+  const { label, count, onIncrement } = props;
+
+  const handleIncrement = () => {
+    onIncrement();
+  };
+
+  return (
+    <div>
+      <span>
+        {label}: {count}
+      </span>
+      <button type="button" onClick={handleIncrement}>
+        {`Increment`}
+      </button>
+    </div>
+  );
+};
+```
+
