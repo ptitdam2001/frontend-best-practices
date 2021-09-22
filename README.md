@@ -4,6 +4,9 @@ Inside this project, we will describe the best practices for frontend technologi
 
 - [React](./React/main.md)
 - [Typescript](./Typescript/main.md)
+- [React in Typescript](./React/typescript.md)
+
+
 
 
 

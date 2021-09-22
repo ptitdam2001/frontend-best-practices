@@ -28,3 +28,5 @@ The component itself is a `<section>`, with only 2 `<div>`s inside it. The first
 
 
 => https://github.com/markerikson/react-redux-links/blob/master/react-architecture.md
+
+=> https://medium.com/@robftw/characteristics-of-an-ideal-react-architecture-883b9b92be0b
